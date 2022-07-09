@@ -1,10 +1,10 @@
-import './navbar.css'
+import './navbar.css';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => (
   <section className="navbar">
     <div>
-      <h1 className ='title-books'>Bookstore CMS</h1>
+      <h1 className="title-books">Bookstore CMS</h1>
     </div>
     <div className="links">
       <ul className="list">
@@ -14,7 +14,7 @@ const Navbar = () => (
           </Link>
         </li>
         <li className="category">
-          <Link to="/category" style={{ textDecoration: 'none', color : 'black'}}>
+          <Link to="/category" style={{ textDecoration: 'none', color: 'black' }}>
             Category
           </Link>
         </li>

@@ -1,8 +1,4 @@
-
-const Category = () => {
-    return (
-  <section className="home">
-  </section>
+const Category = () => (
+  <section className="home" />
 );
-    }
 export default Category;
