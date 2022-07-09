@@ -1,19 +1,21 @@
-.inputs{
+.inputs {
   align-items: baseline;
   display: flex;
   flex-direction: row;
   list-style: none;
   gap: 3em;
 }
-.book-title{
-padding: 20px 400px;
-}
-#books{
-    padding: 20px 200px;
+
+.book-title {
+  padding: 20px 400px;
 }
 
-.add{
-    background-color: rgb(43, 128, 226);
-    padding: 20px 100px;
-    font-size: 15px;
+#books {
+  padding: 20px 200px;
+}
+
+.add {
+  background-color: rgb(43, 128, 226);
+  padding: 20px 100px;
+  font-size: 15px;
 }
