@@ -1,0 +1,20 @@
+.navbar {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0 30px;
+  border: rgb(241, 235, 235) 1px solid;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  gap: 0.5em;
+  font-size: 20px;
+}
+
+.title-books {
+  color: rgb(18, 73, 223);
+  font-size: 30px;
+}
