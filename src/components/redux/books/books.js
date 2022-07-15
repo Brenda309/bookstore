@@ -1,2 +1,2 @@
-const ADD = 'redux/books/ADD';
-const REmove = 'redux/books/REMOVE';
+const BOOK_ADDED = ' BOOK_ADDED';
+const BOOK_REMOVED = ' BOOK_REMOVED';
