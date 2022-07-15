@@ -16,7 +16,7 @@ export function removeBook() {
     type: BOOK_REMOVED,
   };
 }
-export default function reducer(state = initialState, action) {
+export default function bookReducer(state = initialState, action) {
   switch (action.type) {
     case BOOK_ADDED:
       return {
