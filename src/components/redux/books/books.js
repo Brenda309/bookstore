@@ -1,5 +1,5 @@
-const BOOK_ADDED = ' BOOK_ADDED';
-const BOOK_REMOVED = ' BOOK_REMOVED';
+const BOOK_ADDED = 'bookstore/books/BOOK_ADDED';
+const BOOK_REMOVED = 'bookstore/books/BOOK_REMOVED';
 
 export function addBook() {
   return {
