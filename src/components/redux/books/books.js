@@ -32,17 +32,13 @@ export function removeBook(id) {
 
 export default function bookReducer(state = initialState, action) {
   switch (action.type) {
-    case BOOK_ADDED:
-      return {
-        ...state,
-        newBook: '',
-      };
-
-    case BOOK_REMOVED:
-      return {
-        ...state,
-        newBook: '',
-      };
+    case BOOK_ADDED: {
+      return [...state, action.payload];
+    }
+    case BOOK_REMOVED: {
+      const newList = state.filter((book) => book.id !== action.payload);
+      return newList;
+    }
     default:
       return state;
   }
