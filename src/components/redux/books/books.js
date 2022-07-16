@@ -53,7 +53,10 @@ export default function bookReducer(state = initialState, action) {
       const newList = state.filter((book) => book.id !== action.payload);
       return newList;
     }
+    case READ_BOOKS: {
+      return action.payload;
+    }
     default:
-      return state;
+      return initialState;
   }
 }

@@ -1,7 +1,7 @@
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/BHfOudnaPrs5rpU3itrm/books';
+const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/yda7RRzD8a6swaxEX2Uu/books/';
 
 export const getData = async () => {
-  const response = await fetch(url);
+  const response = await fetch(`${baseURL}`);
   const data = await response.json();
   const books = Object.entries(data).map((pair) => ({
     ...pair[1][0],
@@ -13,7 +13,7 @@ export const getData = async () => {
 export const uploadData = async (book) => {
   const apiObj = { ...book };
   delete Object.assign(apiObj, { item_id: apiObj.id }).id;
-  await fetch(url, {
+  await fetch(`${baseURL}`, {
     method: 'POST',
     body: JSON.stringify(apiObj),
     headers: {
@@ -23,7 +23,7 @@ export const uploadData = async (book) => {
 };
 
 export const removeData = async (id) => {
-  await fetch(`${url}/${id}`, {
+  await fetch(`${baseURL}/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
