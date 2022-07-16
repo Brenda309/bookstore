@@ -22,7 +22,6 @@ export default function Categories() {
         <h3>click to check status</h3>
       ) : (
         <h3>
-          {' '}
           <b>Status:</b>
           {status}
         </h3>
