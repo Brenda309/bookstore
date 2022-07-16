@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Books from './books';
 
 function Items() {
-  const state = {
-    books: [
+  const bookstores = () => {
+    const books = [
       {
         id: 1,
-        title: 'book1',
+        title: 'book1 ',
         Author: 'Author1',
       },
       {
@@ -19,12 +19,13 @@ function Items() {
         title: 'book3',
         Author: 'Author3',
       },
-    ],
+    ];
+    return books;
   };
-
+  const [books] = useState(bookstores());
   return (
     <div>
-      {state.books.map(({ id, title, Author }) => (
+      {books.map(({ id, title, Author }) => (
         <Books key={id} title={title} author={Author} />
       ))}
     </div>
