@@ -17,13 +17,13 @@ const BookContainer = () => (
           <Switch>
             <Route exact path="/">
               <Items />
+              <Input />
             </Route>
             <Route path="/category">
               <Category />
             </Route>
           </Switch>
         </div>
-        <Input />
       </div>
     </Router>
   </Provider>
