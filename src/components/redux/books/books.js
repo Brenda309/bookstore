@@ -6,13 +6,6 @@ const READ_BOOKS = 'bookstore/books/READ_BOOKS';
 
 const initialState = [];
 
-// Action
-// export function addBook(book) {
-//   return {
-//     type: BOOK_ADDED,
-//     payload: book,
-//   };
-// }
 export const addBook = (book) => async (dispatch) => {
   await uploadData(book);
   dispatch({
@@ -21,12 +14,6 @@ export const addBook = (book) => async (dispatch) => {
   });
 };
 
-// export function removeBook(id) {
-//   return {
-//     type: BOOK_REMOVED,
-//     payload: id,
-//   };
-// }
 export const removeBook = (id) => async (dispatch) => {
   await removeData(id);
   dispatch({
