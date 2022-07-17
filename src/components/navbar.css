@@ -15,7 +15,7 @@
 }
 
 .title-books {
- width: 15rem;
+  width: 15rem;
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 0;
   font-family: Montserrat, serif;
@@ -25,15 +25,15 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #0290ff
+  color: #0290ff;
 }
 
-book-link{
- width: 3.688rem;
+.book {
+  width: 3.688rem;
   height: 1rem;
   margin: 1.125rem 2.563rem 0.688rem 0;
   font-family: Montserrat, serif;
-  font-size: 15px;
+  font-size: 30px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -42,10 +42,9 @@ book-link{
   color: #121212;
 }
 
-.catego{
+.catego {
   width: 3.688rem;
   height: 1rem;
-  /* margin: 0.45rem 7.563rem 0.688rem 0;  */
   font-family: Montserrat, serif;
   font-size: 15px;
   font-weight: normal;

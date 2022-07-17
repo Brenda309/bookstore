@@ -9,7 +9,7 @@ const Navbar = () => (
     <div className="links">
       <ul className="list">
         <li>
-          <Link className="book-link" to="/" style={{ textDecoration: 'none', color: 'black' }}>
+          <Link className="book" to="/" style={{ textDecoration: 'none', color: 'black' }}>
             Books
           </Link>
         </li>

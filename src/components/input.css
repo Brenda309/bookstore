@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap:2em;
+  gap: 2em;
 }
 
 #books {
@@ -21,9 +21,11 @@
   color: rgb(160, 153, 153);
   border-top: 1px rgb(145, 124, 124) solid;
 }
-.book-title{
+
+.book-title {
   display: none;
 }
-.book-author{
-    padding:20px 400px;
+
+.book-author {
+  padding: 20px 400px;
 }
