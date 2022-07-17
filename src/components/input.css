@@ -23,9 +23,9 @@
 }
 
 .book-title {
-  display: none;
+  padding: 20px 200px;
 }
 
 .book-author {
-  padding: 20px 400px;
+  padding: 20px 200px;
 }
