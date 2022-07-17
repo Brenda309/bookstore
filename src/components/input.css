@@ -19,8 +19,9 @@
   padding: 20px 60px;
   font-size: 15px;
 }
-.new{
+
+.new {
   font-size: 40px;
   color: rgb(160, 153, 153);
-  border-top: 1px rgb(145, 124, 124) solid ;
+  border-top: 1px rgb(145, 124, 124) solid;
 }
