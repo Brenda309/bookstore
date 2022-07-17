@@ -27,10 +27,10 @@
 }
 
 .title {
- width: 3.375rem;
+  width: 3.375rem;
   height: 1.813rem;
   margin: 0.188rem 2.125rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -40,12 +40,11 @@
   color: #121212;
 }
 
-
 .author {
-width: 5.813rem;
+  width: 5.813rem;
   height: 1.188rem;
   margin: 0.25rem 0.875rem 0 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -55,13 +54,12 @@ width: 5.813rem;
   color: #4386bf;
 }
 
- 
- .btn{
+.btn {
   display: flex;
   flex-direction: row;
   list-style: none;
   border: none;
-} 
+}
 
 .btn-buttons {
   display: flex;
@@ -70,7 +68,7 @@ width: 5.813rem;
   width: 4.563rem;
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
