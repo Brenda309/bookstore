@@ -6,6 +6,7 @@ import { addBook } from './redux/books/books';
 const Input = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
   const dispatch = useDispatch();
 
   const handleTitle = (e) => {
@@ -16,11 +17,16 @@ const Input = () => {
     setAuthor(e.target.value);
   };
 
+  const handleCategory = (e) => {
+    setCategory(e.target.value);
+  };
+
   const handleSubmit = () => {
     const mybook = {
       id: Math.floor(Math.random() * 100),
       title,
       author,
+      category,
     };
     dispatch(addBook(mybook));
     setTitle('');
@@ -54,7 +60,12 @@ const Input = () => {
         </div>
         <div>
           <li>
-            <select id="books" name="books" placeholder="categories">
+            <select
+              id="books"
+              name="books"
+              placeholder="categories"
+              onChange={(e) => handleCategory(e)}
+            >
               <option value="categories">categories</option>
             </select>
           </li>

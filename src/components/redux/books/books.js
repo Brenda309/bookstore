@@ -6,13 +6,6 @@ const READ_BOOKS = 'bookstore/books/READ_BOOKS';
 
 const initialState = [];
 
-// Action
-// export function addBook(book) {
-//   return {
-//     type: BOOK_ADDED,
-//     payload: book,
-//   };
-// }
 export const addBook = (book) => async (dispatch) => {
   await uploadData(book);
   dispatch({
@@ -21,25 +14,19 @@ export const addBook = (book) => async (dispatch) => {
   });
 };
 
-// export function removeBook(id) {
-//   return {
-//     type: BOOK_REMOVED,
-//     payload: id,
-//   };
-// }
-export const removeBook = (id) => async (dispatch) => {
-  await removeData(id);
-  dispatch({
-    type: BOOK_REMOVED,
-    payload: id,
-  });
-};
-
 export const readBooks = () => async (dispatch) => {
   const books = await getData();
   dispatch({
     type: READ_BOOKS,
     payload: books,
+  });
+};
+
+export const removeBook = (id) => async (dispatch) => {
+  await removeData(id);
+  dispatch({
+    type: BOOK_REMOVED,
+    payload: id,
   });
 };
 // Redurers
