@@ -3,19 +3,29 @@
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: 3em;
-}
-
-.book-title {
-  padding: 20px 400px;
+  gap: 2em;
 }
 
 #books {
-  padding: 20px 200px;
+  padding: 20px 100px;
 }
 
 .add {
   background-color: rgb(43, 128, 226);
-  padding: 20px 100px;
+  padding: 18px 60px;
   font-size: 15px;
+}
+
+.new {
+  font-size: 40px;
+  color: rgb(160, 153, 153);
+  border-top: 1px rgb(145, 124, 124) solid;
+}
+
+.book-title {
+  padding: 20px 200px;
+}
+
+.book-author {
+  padding: 20px 200px;
 }

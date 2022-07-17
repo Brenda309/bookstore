@@ -1,35 +1,49 @@
+import { getData, removeData, uploadData } from '../../api';
+
 const BOOK_ADDED = 'bookstore/books/BOOK_ADDED';
 const BOOK_REMOVED = 'bookstore/books/BOOK_REMOVED';
+const READ_BOOKS = 'bookstore/books/READ_BOOKS';
 
-const initialState = {
-  books: [],
-  newBook: '',
+const initialState = [];
+
+export const addBook = (book) => async (dispatch) => {
+  await uploadData(book);
+  dispatch({
+    type: BOOK_ADDED,
+    payload: book,
+  });
 };
 
-export function addBook() {
-  return {
-    type: BOOK_ADDED,
-  };
-}
-export function removeBook() {
-  return {
+export const removeBook = (id) => async (dispatch) => {
+  await removeData(id);
+  dispatch({
     type: BOOK_REMOVED,
-  };
-}
+    payload: id,
+  });
+};
+
+export const readBooks = () => async (dispatch) => {
+  const books = await getData();
+  dispatch({
+    type: READ_BOOKS,
+    payload: books,
+  });
+};
+// Redurers
+
 export default function bookReducer(state = initialState, action) {
   switch (action.type) {
-    case BOOK_ADDED:
-      return {
-        ...state,
-        newBook: '',
-      };
-
-    case BOOK_REMOVED:
-      return {
-        ...state,
-        newBook: '',
-      };
+    case BOOK_ADDED: {
+      return [...state, action.payload];
+    }
+    case BOOK_REMOVED: {
+      const newList = state.filter((book) => book.id !== action.payload);
+      return newList;
+    }
+    case READ_BOOKS: {
+      return action.payload;
+    }
     default:
-      return state;
+      return initialState;
   }
 }
