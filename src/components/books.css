@@ -27,8 +27,10 @@
 }
 
 .title {
-  height: 0.13rem;
-  font-family: RobotoSlab, serif;
+ width: 3.375rem;
+  height: 1.813rem;
+  margin: 0.188rem 2.125rem 0 0;
+  font-family: RobotoSlab;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -38,11 +40,12 @@
   color: #121212;
 }
 
+
 .author {
-  width: 2.688rem;
-  height: 0.8rem;
-  margin: 0.25rem 0 0;
-  font-family: RobotoSlab, serif;
+width: 5.813rem;
+  height: 1.188rem;
+  margin: 0.25rem 0.875rem 0 0;
+  font-family: RobotoSlab;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -52,29 +55,31 @@
   color: #4386bf;
 }
 
-.btn {
+ 
+ .btn{
   display: flex;
   flex-direction: row;
   list-style: none;
-}
+  border: none;
+} 
 
 .btn-buttons {
-  background: none;
-  border: none;
-  padding-right: 12px;
-  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
   width: 4.563rem;
   height: 1.188rem;
-  font-family: RobotoSlab, sans-serif;
-  font-size: 14px;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+  font-family: RobotoSlab;
+  font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
-  cursor: pointer;
-  padding-left: 0;
+  border: none;
+  background-color: white;
 }
 
 .progress-containner {
