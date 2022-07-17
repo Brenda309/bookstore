@@ -9,11 +9,11 @@ const Navbar = () => (
     <div className="links">
       <ul className="list">
         <li>
-          <Link className="books" to="/" style={{ textDecoration: 'none', color: 'black' }}>
+          <Link className="book-link" to="/" style={{ textDecoration: 'none', color: 'black' }}>
             Books
           </Link>
         </li>
-        <li className="category">
+        <li className="catego">
           <Link to="/category" style={{ textDecoration: 'none', color: 'black' }}>
             Category
           </Link>

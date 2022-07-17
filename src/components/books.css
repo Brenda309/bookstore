@@ -1,14 +1,32 @@
 .books {
   display: flex;
   border: 1px black solid;
-  justify-content: space-between;
+   width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.688rem;
+  background-color: #fff;
+  border-radius: 2%;
+  border: 0.8px solid #e8e8e8;
+  margin-top: 24px;
+  min-height: 50px;
+  width: 95%;
+  margin: 50px auto;
 }
 
 .category {
+ width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
   font-family: Montserrat, serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   color: #121212;
-  margin-left: 40px;
-  font-size: 14px;
 }
 
 .title {
@@ -21,21 +39,22 @@
   line-height: normal;
   letter-spacing: -0.2px;
   color: #121212;
-  margin-left: 40px;
 }
 
 .author {
   width: 6.688rem;
   height: 1.188rem;
+  margin: 0.25rem 0 0;
   font-family: RobotoSlab, serif;
+  font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
+  font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
-  margin-left: 40px;
-  font-size: 14px;
 }
+
 
 .btn {
   display: flex;
@@ -44,10 +63,22 @@
 }
 
 .btn-buttons {
-  padding: 5px;
+   background: none;
   border: none;
-  background: none;
+  padding-right: 12px; 
+  margin-top: 10px;
+  width: 4.563rem;
+  height: 1.188rem;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   color: #4386bf;
+  cursor: pointer;
+  padding-left: 0;
 }
 
 .progress-containner {
