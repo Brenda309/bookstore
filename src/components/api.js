@@ -1,4 +1,5 @@
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/yda7RRzD8a6swaxEX2Uu/books/';
+const url =
+  'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/yda7RRzD8a6swaxEX2Uu/books/';
 
 export const getData = async () => {
   const response = await fetch(url);
@@ -23,7 +24,7 @@ export const uploadData = async (book) => {
 };
 
 export const removeData = async (id) => {
-  await fetch(`${url}/${id}`, {
+  await fetch(`${url}${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',

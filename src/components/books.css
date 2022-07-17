@@ -1,17 +1,16 @@
-/* .book {
+.book {
   border: 1px black solid;
 }
 
 .buttons {
   display: flex;
-
-  /* flex-direction: column; */
-/* }
+  flex-direction: column;
+}
 
 .read {
   display: flex;
   list-style: none;
-} */ */
+}
 
 .progress-containner {
   display: flex;
