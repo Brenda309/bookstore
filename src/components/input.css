@@ -7,15 +7,15 @@
 }
 
 .book-title {
-  padding: 20px 400px;
+  padding: 20px 100px;
 }
 
 #books {
-  padding: 20px 200px;
+  padding: 20px 100px;
 }
 
 .add {
   background-color: rgb(43, 128, 226);
-  padding: 20px 100px;
+  padding: 20px 60px;
   font-size: 15px;
 }
