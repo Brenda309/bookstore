@@ -28,7 +28,7 @@ const Input = () => {
   };
   return (
     <div>
-      <h1>Add New</h1>
+      <h1 className="new">Add New</h1>
       <div className="inputs">
         <div>
           <li>
