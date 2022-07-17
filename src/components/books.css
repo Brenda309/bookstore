@@ -3,12 +3,14 @@
   border: 1px black solid;
   justify-content: space-between;
 }
-.category{
+
+.category {
   font-family: Montserrat, serif;
   color: #121212;
-   margin-left: 40px;
-   font-size: 14px;
+  margin-left: 40px;
+  font-size: 14px;
 }
+
 .title {
   height: 1.813rem;
   font-family: RobotoSlab, serif;
@@ -19,23 +21,20 @@
   line-height: normal;
   letter-spacing: -0.2px;
   color: #121212;
-   margin-left: 40px;
+  margin-left: 40px;
 }
 
 .author {
   width: 6.688rem;
   height: 1.188rem;
-  margin: 0.25rem 0 0;
   font-family: RobotoSlab, serif;
-  font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
-  font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #4386bf;
-   margin-left: 40px;
-     font-size: 14px;
+  margin-left: 40px;
+  font-size: 14px;
 }
 
 .btn {
@@ -43,14 +42,14 @@
   flex-direction: row;
   list-style: none;
 }
-.btn-buttons{
- padding: 5px;
+
+.btn-buttons {
+  padding: 5px;
   border: none;
   background: none;
   color: #4386bf;
- 
-
 }
+
 .progress-containner {
   display: flex;
   align-items: center;
@@ -102,7 +101,8 @@
   color: #e8e8e8;
   cursor: pointer;
 }
-.remove{
+
+.remove {
   border-right: 2px #4386bf solid;
   border-left: 2px  #4386bf solid;
 }
