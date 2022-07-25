@@ -41,6 +41,24 @@ const Books = ({
             </li>
           </ul>
         </div>
+        <div>
+          <div className="progress-containner">
+            <div>
+              <div className="progress">c</div>
+            </div>
+            <div>
+              <h1>100%</h1>
+              <span>completed</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 className="current-chap">current chapter</h1>
+          <h2 className="chap">Final Chapter</h2>
+          <button className="progress-update" type="button">
+            Update Progress
+          </button>
+        </div>
       </div>
       <div>
         <div className="progress-containner">

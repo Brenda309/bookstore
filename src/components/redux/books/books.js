@@ -14,6 +14,7 @@ export const addBook = (book) => async (dispatch) => {
   });
 };
 
+
 export const removeBook = (id) => async (dispatch) => {
   await removeData(id);
   dispatch({
@@ -22,11 +23,20 @@ export const removeBook = (id) => async (dispatch) => {
   });
 };
 
+
 export const readBooks = () => async (dispatch) => {
   const books = await getData();
   dispatch({
     type: READ_BOOKS,
     payload: books,
+  });
+};
+
+export const removeBook = (id) => async (dispatch) => {
+  await removeData(id);
+  dispatch({
+    type: BOOK_REMOVED,
+    payload: id,
   });
 };
 // Redurers

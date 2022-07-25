@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Navbar from './navbar';
 import Category from './category';
-// import Books from './books';
 import Input from './inputs';
 import Items from './items';
 import store from './redux/configureStore';
