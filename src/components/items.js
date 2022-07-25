@@ -1,31 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Books from './books';
+import { readBooks, removeBook } from './redux/books/books';
 
 function Items() {
-  const state = {
-    books: [
-      {
-        id: 1,
-        title: 'book1',
-        Author: 'Author1',
-      },
-      {
-        id: 2,
-        title: 'book2',
-        Author: 'Author2',
-      },
-      {
-        id: 3,
-        title: 'book3',
-        Author: 'Author3',
-      },
-    ],
-  };
+  const books = useSelector((state) => state.bookStores);
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(readBooks());
+  }, []);
+
+  const handleDelete = (id) => {
+    dispatch(removeBook(id));
+  };
   return (
     <div>
-      {state.books.map(({ id, title, Author }) => (
-        <Books key={id} title={title} author={Author} />
+      {books.map(({ title, author, id }) => (
+        <Books
+          key={id}
+          id={id}
+          title={title}
+          author={author}
+          removeBook={handleDelete}
+        />
       ))}
     </div>
   );
