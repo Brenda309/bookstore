@@ -34,7 +34,7 @@ const Input = () => {
   };
   return (
     <div>
-      <h1>Add New</h1>
+      <h1 className="new">Add New BOOK</h1>
       <div className="inputs">
         <div>
           <li>
@@ -53,7 +53,7 @@ const Input = () => {
               type="text"
               value={author}
               onChange={(e) => handleAuthor(e)}
-              className="book-title"
+              className="book-author"
               placeholder="Book author"
             />
           </li>

@@ -14,6 +14,16 @@ export const addBook = (book) => async (dispatch) => {
   });
 };
 
+
+export const removeBook = (id) => async (dispatch) => {
+  await removeData(id);
+  dispatch({
+    type: BOOK_REMOVED,
+    payload: id,
+  });
+};
+
+
 export const readBooks = () => async (dispatch) => {
   const books = await getData();
   dispatch({
